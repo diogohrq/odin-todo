@@ -7,6 +7,7 @@
 
 ### Todo Properties 
 
+- id
 - title
 - description
 - dueDate
@@ -15,6 +16,7 @@
 
 ### Project Properties
 
+- id
 - name 
 - todos
 
