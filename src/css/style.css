@@ -1,0 +1,50 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img, svg, picture, video {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+:root {
+  --clr-primary: #46c78c;
+  --clr-secondary: #f2f2f2;
+  --clr-accent: #64b5d0;
+  --clr-neutral: #f6fcf9;
+  --clr-txt: #07180f;
+  --ff-regular: 'IBM Plex Sans', sans-serif;
+  --ff-accent: 'IBM Plex Serif', serif;
+}
+
+body {
+  background-color: var(--clr-secondary);
+  font-family: var(--ff-regular);
+}
+
+/* header */
+
+.header__logo {
+  display: block;
+  padding-block: .625rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--clr-txt);
+  font-family: var(--ff-accent);
+  font-size: 1.8rem;
+}
