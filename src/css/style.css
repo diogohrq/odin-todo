@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -13,12 +15,18 @@ body {
   min-height: 100vh;
 }
 
-img, svg, picture, video {
+img,
+svg,
+picture,
+video {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -28,23 +36,56 @@ input, button, textarea, select {
   --clr-accent: #64b5d0;
   --clr-neutral: #f6fcf9;
   --clr-txt: #07180f;
-  --ff-regular: 'IBM Plex Sans', sans-serif;
-  --ff-accent: 'IBM Plex Serif', serif;
+  --ff-regular: "IBM Plex Sans", sans-serif;
+  --ff-accent: "IBM Plex Serif", serif;
 }
 
 body {
   background-color: var(--clr-secondary);
   font-family: var(--ff-regular);
+  height: 100vh;
 }
 
 /* header */
 
-.header__logo {
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 10px;
+}
+
+.header__toggle {
+  border: none;
+  cursor: pointer;
+}
+
+.header__toggle:hover {
+  background: none;
+}
+
+.header__toggle > span {
   display: block;
-  padding-block: .625rem;
+  background-color: var(--clr-txt);
+  width: 25px;
+  height: 3px;
+}
+
+.header__toggle > span + span {
+  margin-top: 5px;
+}
+
+.header__title {
+  flex: 1;
   text-align: center;
-  text-decoration: none;
-  color: var(--clr-txt);
   font-family: var(--ff-accent);
-  font-size: 1.8rem;
+}
+
+/* nav */
+
+.nav {
+  padding: 0.8rem;
+  border: 1px solid #000;
+  width: fit-content;
+  height: 100%;
 }
