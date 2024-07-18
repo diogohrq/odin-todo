@@ -136,7 +136,7 @@ body {
 .sidebar__accordion {
   padding: 10px 5px;
   border-radius: 5px;
-  border: 1px solid var(--clr-accent);
+  /* border: 1px solid var(--clr-accent); */
 }
 
 .sidebar__accordion-heading {
